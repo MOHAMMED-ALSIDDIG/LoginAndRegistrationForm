@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="buttom-box">
+          <div id="btn"></div>
+          <button class="toggle-btn" id="login" onclick="login();">
+            login
+          </button>
+          <button class="toggle-btn" id="register" onclick="reg();">
+            register
+          </button>
+        </div>
+        <!-- form login -->
+        <form action="" id="form-login">
+          <input
+            type="email"
+            placeholder="Email"
+            class="input-field"
+            maxlength="30"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input-field"
+            maxlength="20"
+            required
+          />
+          <div class="remember-pass">
+            <input type="checkbox" class="check" /> Remember password
+          </div>
+          <button type="submit" class="submit-btn" id="login-btn">login</button>
+          <p>Don't have an account? <a href="#" onclick="reg();">Sign up</a></p>
+          <a href="">Forget Password?</a>
+        </form>
+        <!-- form Register -->
+        <form action="" id="form-register">
+          <input
+            type="text"
+            placeholder="First Name"
+            class="input-field"
+            maxlength="15"
+            required
+          />
+          <input
+            type="text"
+            placeholder="First Name"
+            class="input-field"
+            maxlength="15"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="input-field"
+            maxlength="30"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input-field"
+            maxlength="20"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="input-field"
+            maxlength="20"
+            required
+          />
+          <button type="submit" class="submit-btn" id="register-btn">
+            Register
+          </button>
+          <p>
+            Already have an account? <a href="#" onclick="login();">Login</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
